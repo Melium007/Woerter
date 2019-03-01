@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wörterbuch</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/normalize.css" >
+          <link rel="stylesheet" href="css/style.css" >
+    </head>
+    <body>
+	
+    
+    
+<div class="header">
+    <h1 title="gesamtes Wörterbuch laden">Wörterbuch</h1>
+    <div id="translate">
+        <button id="textOrgLang"  onclick="selectLang (1)">Schwäbisch</button>  
+        <button id="texttransLang"  onclick="selectLang (2)">Deutsch</button>  
+        <label>
+        <input type="checkbox" name="merken" id="merken" value="true">
+            Merken</label>
+        <span id="merkCounter"></span>
+        <button id="save"  onclick="save()">gemerkte Abspeichern</button>  <button id="load"  onclick="load()">lade gemerkte</button>  
+        <button id="deleteIt"  onclick="deleteIt()">lösche gemerkte</button> 
+        <button id="playMemory"  onclick="window.location.href='memory.html'">play Memory</button>
+        <button id="quiz"  onclick="window.location.href='quiz.html'">Quiz 1</button>
+         <button id="quiz2"  onclick="window.location.href='animation.html'">Quiz 2</button>
+        
+    </div><!--div id="translate" -->
+    
+</div><!--div class="header" -->
+    
+    <div class="wrapper">
+        <div class="wordListDiv">
+            <input type="text" id="search" placeholder="Wort suchen">
+            <button id="searchBtn"  onclick="search()">&rArr;</button>   
+            <form onsubmit="return false" name="formWortListe">
+              <ul id="wordList"></ul>
+            </form>
+        </div>
+  
+        <div class="word">
+            <h3 id="wordText">Wort:</h3>
+            <p id="original"></p>
+            <hr>
+
+            <h3>Erklärung:</h3>
+            <div id="meaning"></div>
+        </div><!-- div word -->
+        
+        <div id="fehler" class="hideMe"></div>
+       
+    </div><!-- div wrapper -->   
+        
+  <script src="indexV7.js"></script>
+        </body>
+</html>

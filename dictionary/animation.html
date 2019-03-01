@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+	<head>
+	
+		<title>Quiz 2</title>
+	
+		<meta charset="utf-8">   
+        <link rel="stylesheet" href="css/animationV3.css" >
+        
+	</head>
+
+	<body>
+<div id="menue">
+    <button id="load1"  onclick="load(1)">lade ganzes Buch</button>  
+    <button id="load2"  onclick="load(2)">lade gemerkte Wörter</button>
+    <input type="number" id="anzahlFragen" title="Anzahl der Fragen" value=3>
+  
+    <div id="counter">
+        
+        <span id="turnCount">Frage: 0</span>
+       <!--  <span>Zeit: 100</span>-->
+        <span id="korrekteAntworten">korrekte: 0</span>
+        <span id="falscheAntworten">falsche: 0</span>
+    </div>
+    <div id="menue2"><button id="woerterBuch"  onclick="window.location.href='index.html'">Wörterbuch</button>
+    <button id="playMemory"  onclick="window.location.href='memory.html'">play Memory</button>
+    <button id="quiz1"  onclick="window.location.href='quiz.html'">Quiz 1</button></div>
+    <div id="frageText"></div>
+    <div id="ausgabe"></div>
+</div>
+		<div id="container">
+              <!-- erste Zeile -->
+			<div id="animate1" class="animate"></div>
+			<div id="animate2" class="animate"></div>
+			<div id="animate3" class="animate"></div>
+			<div id="animate4" class="animate"></div>
+            <!-- zweite Zeile -->
+			<div id="animate5" class="animate"></div>
+			<div id="animate6" class="animate"></div>
+			<div id="animate7" class="animate"></div>
+			<div id="animate8" class="animate"></div>
+			  <!-- dritte Zeile -->
+            <div id="animate9" class="animate"></div>
+			<div id="animate10" class="animate"></div>
+			<div id="animate11" class="animate"></div>
+			<div id="animate12" class="animate"></div>
+			
+		</div>
+		
+        
+        <div id="fehler" class="hideMe"></div>
+
+		<script src="animationV3.js"></script>
+    
+	</body>
+
+</html>

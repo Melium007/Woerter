@@ -1,0 +1,166 @@
+* {margin:0;
+box-sizing: border-box;}
+
+body {
+    font-size:1.2em;
+     overflow:hidden;
+    height: 100%;
+}
+.wrapper {
+    width:95%;
+    margin:0px auto;
+    border: 1px solid gray;
+}
+/* hierdurch behält der wrapper seinene Rahmen*/
+.wrapper::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.header {
+    width: 95%;
+    margin: 40px auto 0px;
+    color:white;
+    background: #6996cb;
+    border: 1px solid gray;
+    border-radius;8px 8px 0px 0px;
+  padding:10px;
+}
+
+h1:hover{
+    cursor:pointer;
+    color:#5641d4;
+}
+
+#translate button {
+    height:1.6em;
+    background:#ebebeb;
+    color: #6996cb;
+    border:none;
+    border-radius:4px;
+}  
+
+#merkCounter
+{ 
+    border:1px solid #ebebeb;
+    padding:1px;
+    margin:2px;
+}
+
+#playMemory
+{
+    text-decoration: none;
+    display:inline-block;
+    height:1.6em;
+    background:#ebebeb;
+    color: #6996cb;
+    border:none;
+    border-radius:4px;
+}
+
+
+#search{
+    margin-left:10px;
+    width:70%;
+    padding:5px;
+    height:1.6em;
+    border-radius:4px;
+}
+#searchBtn {
+    width:15%;
+    height:1.6em;
+    background:#6996cb;
+    color: white;
+    border:none;
+    border-radius:4px;
+}
+/*Format für das gefundene Wort/seine Übersetzung und die Beschriftung (h3)*/
+.word{
+    width:69%;
+    float:left;
+     padding-left:10px;
+    position:relative;
+}
+
+h3{
+    color:#483d8b;
+}
+
+#original, #meaning
+{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 10px;    
+    padding-bottom: 10px;    
+}
+/*Formate für die Wortliste*/
+.wordListDiv{
+    width:30%;
+    background: #ebebeb;
+    padding-top:10px;
+    float:left;
+}
+#wordList{
+    max-height:70vh;
+    overflow-y:scroll;
+}
+ul{
+    margin-left: 2px;
+    padding-left:10px;
+}
+li{
+    list-style-type:none;
+    line-height:1.4em;
+}
+li:hover{
+    cursor:pointer;
+    color:#5641d4;
+}
+
+/* markiert den gefundenen Eintrag  */
+.highlight{
+ /*   border-left: 4px solid blue;
+    margin-left:-6px;
+    padding-left:2px;
+    border-top-left-radius:8px;*/
+}
+/* Pfeil vor den gefundenen Eintrag*/
+.highlight::before
+{content:"";
+    display:inline-block;
+    width: 0; 
+    height: 0; 
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+
+    border-left: 6px solid #5641d4;
+    margin-left:-8px;
+    padding-left:2px;
+}
+/*checkbox vor den Wörtern der Wortliste*/
+.wortMerker{ margin-right:10px;
+    margin-left:2px;
+    }
+
+/*für das FehlerMeldungs Div*/
+.hideMe{display:none;}
+.showMe{display:inline-block;}
+   
+#fehler 
+{
+    position: absolute;
+    right: 150px;
+    width:50%;
+    height: 10rem;    
+    top:380px;
+    padding-top: 2rem;
+    text-align: center;
+    color:red;
+    font-size:2rem;
+    border:1px solid red;
+    box-shadow: 0 0 5px red;
+}
+
+
+

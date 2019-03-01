@@ -1,0 +1,1557 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Usuario</Author>
+  <LastAuthor>Alfa</LastAuthor>
+  <Created>2018-05-04T18:41:21Z</Created>
+  <LastSaved>2019-02-25T10:31:14Z</LastSaved>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>8925</WindowHeight>
+  <WindowWidth>19965</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s16">
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s17">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#343434"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s18">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#343434"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s19">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#343434"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s20">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:Indent="1"
+    ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#343434"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s21">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s22">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="11" ss:Color="#000000"/>
+   <Interior ss:Color="#FFFFFF" ss:Pattern="Solid"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Hoja1">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="357" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s16" ss:DefaultColumnWidth="302.25"
+   ss:DefaultRowHeight="15">
+   <Column ss:StyleID="s22"/>
+   <Column ss:StyleID="s21"/>
+   <Row>
+    <Cell ss:StyleID="s18"><Data ss:Type="String">General</Data></Cell>
+    <Cell ss:StyleID="s17"><Data ss:Type="String">Allgemein</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ja</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">no</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Nein</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">maybe</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Vielleicht</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">please</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Bitte</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">thank you</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Danke</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">sorry</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Entschuldigung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">alright</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Alles klar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I (do not) understand</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich verstehe (nicht)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Do you speak German?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sprechen Sie Deutsch?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I don’t speak English</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich spreche kein Englisch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Help!</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Hilfe!</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">A little slower please</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ein bisschen langsamer bitte</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Bless you!</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Gesundheit!</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Cheers!</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Prost!</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">where</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">when</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wann</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">who</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">why</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Warum</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Introductions</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Vorstellungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">name</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Name</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">What is your name?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie heißen Sie?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">My name is…</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich heiße…</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I am…</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich bin…</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">It is nice to meet you.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Es ist nett Sie kennenzulernen.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I am X years old.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich bin X Jahre alt.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I am from …</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich komme aus…</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">How old are you?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie alt sind Sie ?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Where do you work?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wo arbeiten Sie?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Where are you from?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wo kommen Sie her?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">What brings you here?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Was bringt Sie hierher?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">How was your trip?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie war Ihre Reise?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Are you having a good time?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Haben Sie eine gute Zeit?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">What do you think about…?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Was halten Sie von …?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">My friends call me …</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Meine Freunde nennen mich …</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Have we met before?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kennen wir uns?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">This is (name)</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Dies ist (Name)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">How was your weekend?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie war Ihr Wochenende?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Greeting / Farewell</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Begrüssung / Verabschiedung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Hello</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Hallo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Good morning</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Guten Morgen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Good afternoon</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Guten Tag</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Good evening</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Guten Abend</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Good night</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Gute Nacht</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Goodbye</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Tschüss</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">See you</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Auf Wiedersehen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">How are you?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie geht es Ihnen?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">well / good</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">gut</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bad</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">schlecht</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Hey/Hi</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Hey / Hallo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">How’s it going? / How do you do?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie geht’s?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">What’s up?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Was geht?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Good to see you.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Schön Sie zu sehen.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Pleased to meet you.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Nett Sie kennenzulernen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Take care.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mach’s gut</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Long time no see,&#160;Haven’t seen you in a while</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Lange nicht gesehen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">How are things going?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie steht’s?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Travel</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Reise</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I would like…</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich möchte gerne…</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Where is the restroom?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wo sind die Toilleten?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">What time is it?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie spät ist es?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I am staying at…</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich übernachte bei…</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I am visiting family Smith</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich besuche Familie Smith</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I am here for X days</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich bin hier für X Tage</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Do you have a map?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Haben Sie eine Karte?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">passport</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Reisepass</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">airport</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Flughafen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">port</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Hafen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">security</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sicherheit</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">aeroplane</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Flugzeug</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">train</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zug</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">ship</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Schiff</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bike</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Fahrrad</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">motorbike</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Motorrad</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bus</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Bus</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to fly</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">fliegen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to drive</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">fahren</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to sail</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">segeln</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to ride</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">fahren</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Directions</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wegbeschreibungen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">left</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">links</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">right</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">rechts</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">here</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">hier</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">there</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">dort</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">back</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">zurück</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">up</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">hoch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">down</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">runter</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">straight on</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">geradeaus</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">place</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ort</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Where is ..?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wo ist…?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">How do I get to…?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie komme ich nach…?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I’m looking for … street.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich suche … Straße.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">around the corner</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">um die Ecke</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">far</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">weit</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">near</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">in der Nähe von</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">across from</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">gegenüber von</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">follow me</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Folgen Sie mir</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">next to X</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">neben X</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">go past</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">vorbeigehen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">between</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">zwischen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Time / dates</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zeiten / Daten</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">now</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">jetzt</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">today</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">heute</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">tomorrow</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">morgen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">yesterday</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">gestern</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">second</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sekunde</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">minute</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Minute</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">hour</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Stunde</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">day</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Tag</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">week</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Woche</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">month</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Monat</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">year</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Jahr</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">early</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">früh</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">late</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">spät</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">monday</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Montag</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">tuesday</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Dienstag</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">wednesday</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mittwoch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">thursday</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Donnerstag</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">friday</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Freitag</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">saturday</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Samstag</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">sunday</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sonntag</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">spring</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Frühling</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">summer</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sommer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">fall</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Herbst</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">winter</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Winter</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">january</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Januar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">february</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Februar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">march</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">März</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">april</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">April</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">may</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mai</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">june</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Juni</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">july</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Juli</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">august</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">August</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">september</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">September</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">october</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Oktober</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">november</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">November</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">december</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Dezember</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">time</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Uhrzeit</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">What time is it?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie spät ist es?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">decade</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Jahrzehnt</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">century</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Jahrhundert</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Locations</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Orte</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">grocery store</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Supermarkt</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">hospital</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Krankenhaus</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bank</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Bank</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">hotel</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Hotel</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bar</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Bar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">pharmacy</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Apotheke</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">beach</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Strand</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">restaurant</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Restaurant</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">airport</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Flughafen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bakery</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Bäckerei</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bus station</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Bushaltestelle</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">church</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kirche</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">cinema</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kino</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">gas station</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Tankstelle</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">museum</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Museum</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">police station</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Polizeistation</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">school</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Schule</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">square</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Platz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">supermarket</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Supermarkt</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">zoo</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zoo</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Shopping</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Einkaufen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">expensive</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">teuer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">cheap</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">billig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">free</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">kostenlos</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">How much is that?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wie viel kostet das?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">cashier</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kassierer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">trolley/shopping cart</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Trolley / Warenkorb</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bag</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Tasche</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">warranty</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Garantie</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">refund policy</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Rückgaberecht</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">loyalty card</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kundenkarte</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">VAT receipt</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mehrwertsteuer-Quittung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">cash discount</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Rabatt</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">aisle</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Gang</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">shelf</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Regal</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">changing room</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Umkleidekabine</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">delivery</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Lieferung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">sale</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Schlussverkauf</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Excuse me, do you work here?</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Entschuldigen Sie, arbeiten Sie hier?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">In the restaurant</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Im Restaurant</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">A table for X, please.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Einen Tisch für X Personen, bitte.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I would like to order.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ich würde gerne bestellen.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">May I see the menu.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kann ich bitte die Karte haben?</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Check, please. Can I have the bill.</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Die Rechnung bitte.</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">breakfast</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Frühstück</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">lunch</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mittagsessen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">dinner</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Abendessen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">cutlery</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Besteck</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">napkin</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Serviette</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">brunch</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Brunch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">main course</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Hauptgang</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">dessert</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Dessert</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">tip</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Trinkgeld</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">side dish</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Beilage</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">beverages</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Getränke</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">all you can eat</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">All you can eat</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">happy hour</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Happy Hour</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">appetizer</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Appetizer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">In the hotel</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Im Hotel</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">room</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zimmer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">room service</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zimmerservice</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bathroom</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Badezimmer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bed</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Bett</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bedroom</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Schlafzimmer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">floor</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Etage</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">elevator</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Aufzug</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">reception</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Rezeption</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">towel</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Handtuch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">adjoining rooms</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Nebenräume</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">baggage</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Gepäck</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bellboy</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Page</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">kitchenette</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kochnische</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">linen</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Bettwäsche</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">valet</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kammerdiener</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">lobby</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Lobby</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">deposit</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Anzahlung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">check-in</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Einchecken</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">check-out</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Auschecken</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">complimentary</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">gratis</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Numbers</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zahlen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">one</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Eins</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">two</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zwei</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">three</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Drei</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">four</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Vier</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">five</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Fünf</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">six</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sechs</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">seven</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sieben</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">eight</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Acht</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">nine</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Neun</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">ten</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zehn</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">eleven</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Elf</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">twelve</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zwölf</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">thirteen</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Dreizehn</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">fourteen</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Vierzehn</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">fifteen</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Fünfzehn</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">sixteen</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sechszehn</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">eventeen</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Siebzehns</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">eighteen</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Achtzehn</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">nineteen</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Neunzehn</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">twenty</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zwanzig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">thirty</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Dreißig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">fourty</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Vierzig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">fifty</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Fünfzig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">sixty</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sechszig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">seventy</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Siebzieg</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">eighty</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Achzig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">ninety</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Neunzig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">hundred</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Hundert</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">two hundred</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zweihundert</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">thousand</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Tausend</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">two thousand</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Zweitausend</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">million</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Million</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">billion</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Milliarde</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">first</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">erste(r)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">second</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">zweite(r)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">third</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">dritte(r)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">fourth</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">vierte(r)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">fifth</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">fünfte(r)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">sixth</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">sechste(r)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">seventh</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">siebte(r)</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Personal pronouns</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Personalpronomen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">I</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ich</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">you</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">du</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">he</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">er</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">she</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">sie</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">it</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">es</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">we</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">wir</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">you</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ihr</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">they</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">sie</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Important words</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wichtige Wörter</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">thing</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ding</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">sure</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">sicher</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">the</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">der/die/das</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">and</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">und</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">or</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">oder</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">because</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">weil</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">life</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Leben</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">government</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Regierung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">child</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kind</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">company</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Firma</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">group</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Gruppe</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">age</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Alter</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">moon</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mond</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">sun</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Sonne</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">car</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Auto</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">book</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Buch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">world</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Welt</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">family</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Familie</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">friend</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Freund</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">law</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Gesetz</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Human / Body</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mensch / Körper</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">man</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mann</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">woman</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Frau</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">boy</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Junge</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">girl</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Mädchen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">arm</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Arm</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">hand</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Hand</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">leg</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Bein</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">foot</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Fuß</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">eye</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Auge</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">head</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Kopf</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">brain</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Gehirn</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">nose</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Nase</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">ear</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Ohr</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">hair</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Haar</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">eyebrow</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Augenbraue</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">lips</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Lippen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">finger</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Finger</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">skeleton</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Skelett</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bones</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Knochen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">skin</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Haut</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Important verbs</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wichtige Verben</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to be</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">sein</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to get</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">bekommen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to give</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">geben</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to live</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">leben</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to make</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">machen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to walk</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">gehen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to use</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">benutzen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to eat</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">essen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to think</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">denken</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to come</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">kommen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to have</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">haben</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to do</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">tun</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to say</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">sagen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to go</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">gehen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to know</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">wissen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to see</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">sehen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to want</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">wollen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to find</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">finden</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to tell</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">erzählen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to ask</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">fragen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to try</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">versuchen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">to call</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">anrufen</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">Important adjectives</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">Wichtige Adjektive</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">beautiful</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">schön</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">ugly</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">hässlich</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">tall</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">hoch</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">small</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">klein</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">big</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">groß</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">new</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">neu</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">long</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">lang</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">great</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">großartig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">old</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">alt</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">young</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">jung</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">different</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">anders</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">important</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">wichtig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">bad</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">schlecht</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">funny</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">lustig</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">serious</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">ernst</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">strong</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">stark</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">easy</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">einfach</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">difficult</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">schwer</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">poor</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">arm</Data></Cell>
+   </Row>
+   <Row>
+    <Cell ss:StyleID="s20"><Data ss:Type="String">rich</Data></Cell>
+    <Cell ss:StyleID="s19"><Data ss:Type="String">reich</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>C1</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

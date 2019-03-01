@@ -1,0 +1,530 @@
+<!doctype html>
+<html>
+
+	<head>
+	
+		<title>konfig</title>
+	
+		<meta charset="utf-8">    
+
+		<style>
+            body{width: 80%;margin:auto;}
+			input {
+				width: 20%;
+				padding: 12px 20px;
+				margin: 8px 0;
+				display: inline-block;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+			}
+           
+			button {
+				width: 12%;
+				background-color: #6996cb;
+				color: white;
+				padding: 14px 20px;
+				margin: 8px 0;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: #86b2e5;
+			}
+
+			div {
+				border-radius: 5px;
+				background-color: #f2f2f2;
+				padding: 20px;
+                width: 100%;
+			}
+            #changeBook,  #auswahl, #divXmlAusgabe{border:1px solid rgba(34, 33, 33, 0.69)}
+           
+            #tabelle{background-color: #fff;}          
+/*für das FehlerMeldungs Div*/
+.hideMe{display:none;}
+.showMe{display:inline-block;}
+   
+#fehler 
+{
+    position: absolute;
+    right: 150px;
+    width:50%;
+    height: 10rem;    
+    top:380px;
+    padding-top: 2rem;
+    text-align: center;
+    color:red;
+    font-size:2rem;
+    border:1px solid red;
+    box-shadow: 0 0 5px red;
+}
+		</style>		
+		
+	</head>
+
+	<body>
+	<h1>Konfiguration Wörterbuch</h1>
+        
+        <div id="changeBook">
+            <form action="#" name="changeBookForm" id="changeBookForm" onsubmit="return false;">
+         <label for="dateiname">Wörterbuch:</label>
+            <select name="dateiname">
+				<option value="1">Schwäbisch</option>
+				<option value="2">Englisch</option>
+				<option value="3">Platt</option>
+			</select>		  
+             <button onclick="saveChange()">änderung Speichern</button>
+             <button onclick="addBook()">neues Wörterbuch</button>
+      </form>
+        </div>
+        <div id="ausgabe" >
+            <span id="ausgabeSprache1"></span>
+            <span id="ausgabeSprache2"></span>
+            <span id="ausgabeDateiName"></span>
+        </div>
+        
+		<div id="newBook" >
+		  <form action="#" name="konfigForm" id="konfigForm" onsubmit="return false;">
+              <button onclick="setFormDaten()">Laden</button>
+                <label for="sprache1">erste Sprache:</label>
+                <input type="text" name="sprache1" value="Schwäbisch">
+
+                <label for="sprache2">zweite Sprache:</label>
+                <input type="text" name="sprache2" value="Deutsch">
+                <br>
+                <label for="neueDatei">Dateiname JsonDatei</label>
+                <input type="text" name="neueDatei" value="woerterbuch.jason">
+              
+                <button onclick="saveNew()">speichern</button>
+                <button onclick="deleteIt()">löschen</button>
+		  </form> 
+		</div>	
+        
+        <div>
+            <button id="woerterBuch"  onclick="window.location.href='index.html'">Wörterbuch</button>
+             <button id="playMemory"  onclick="window.location.href='memory.html'">play Memory</button>
+        <button id="quiz"  onclick="window.location.href='quiz.html'">Quiz 1</button>
+         <button id="quiz2"  onclick="window.location.href='animation.html'">Quiz 2</button>
+        </div>
+        <button onclick="showJson()">zeige Formular Json aus XML erzeugen</button><br>
+        
+       
+
+         <div id="divXmlAusgabe" class="hideMe">
+             <h2>XML to Json</h2>
+                <form onsubmit="return false" name="xmlAusgabe">
+                    <label for="xmlDateiName">Dateiname XMLDatei</label>
+                    <input type="text" name="xmlDateiName" id="xmlDateiName" value="woerterbuch.xml">
+                    <button type="button" onclick="loadDoc()">Inhalt wechseln</button>
+                    <button type="button" onclick='cutText()'>Inhalt ausschneiden</button>
+                     <button id="jsonlint"  onclick="window.location.href='https://jsonlint.com/'">
+                         JSON Validator</button>
+                    
+                    <br>
+                    <label for="json">json</label>
+                    <textarea id="json" name="json" placeholder="json"></textarea>
+                </form>
+        </div>
+	   <div id="tabelle"></div>
+        
+	       <div id="fehler" class="hideMe"></div>
+		<script>		
+			
+			"use strict";
+// ############Globale Variablen  ###############
+const KeyLocalKonfig="persoenlichesWoerterbuchKonfig";
+const formular = document.forms["konfigForm"];
+const fehlerDiv=document.getElementById("fehler");
+const timeoutTimer= 4000;// timer für die Fehlermeldung
+            
+var konfig=	new Object();
+konfig={
+sprache1:'' ,
+sprache2:'' ,
+dateiName:''}
+let timer;// index des TimeOuts
+            
+let ausgabeSprache1=document.getElementById("ausgabeSprache1");
+let ausgabeSprache2=document.getElementById("ausgabeSprache2");
+let ausgabeDateiName=document.getElementById("ausgabeDateiName");
+var xmlDatei="woerterbuch.xml";         
+var textArea = document.getElementById("json");
+textArea.value="";
+//konfigList=["sprache1","sprache2","dateiname"]
+var konfigList= 
+    [
+        ["Schwäbisch", "Deutsch", "woerterbuch.json"],
+        ["Englisch", "Deutsch", "englischWoerterbuch.json"],
+        ["Platt", "Deutsch", "platt.json"]
+    ];
+            
+ //################################           
+            
+function saveChange()
+    {
+        var konForm= document.forms["changeBookForm"];
+        console.log(konForm);
+       
+        let bookNr=  konForm["dateiname"].value;
+       
+        console.log(bookNr+" "+konfigList[0]);
+        
+        switch(bookNr)
+        {//konfigList=["sprache1","sprache2","dateiname"]
+            case "1":
+                konfig.sprache1 =konfigList[0][0];
+				konfig.sprache2 =konfigList[0][1];
+                konfig.dateiName=konfigList[0][2];
+                break;   
+            case "2":
+                konfig.sprache1 =konfigList[1][0];
+				konfig.sprache2 =konfigList[1][1];
+                konfig.dateiName=konfigList[1][2];
+                break;    
+            case "3":
+                konfig.sprache1 =konfigList[2][0];
+                konfig.sprache2 =konfigList[2][1];
+                konfig.dateiName=konfigList[2][2];
+                break;    
+                
+        }//switch(bookNr)
+        
+        console.log (konfigList);
+        console.log (konfig);
+        save();
+        
+    }//end saveChange()          
+       
+function addBook()
+    {
+    document.getElementById("newBook").classList.toggle("hideMe");
+   //     document.getElementById("ausgabe").removeAttribute('class');
+     //   document.getElementById("ausgabe").setAttribute('class','hideMe');
+    }//end addBook  			
+function getFormDaten()
+    {
+        konfig.sprache1 = formular["sprache1"].value;
+	    konfig.sprache2 = formular["sprache2"].value;
+        konfig.dateiName= formular["neueDatei"].value;
+		//alert(konfig.sprache1+" "+konfig.sprache2+" "+konfig.dateiName);
+    
+	}//getFormDaten()
+            
+//fülle das Formular
+function setFormDaten()
+        {
+                load();
+				formular["sprache1"].value=konfig.sprache1;
+				formular["sprache2"].value=konfig.sprache2;
+				formular["neueDatei"].value=konfig.dateiName;
+          document.getElementById("newBook").setAttribute('class','showMe');   
+        }//setFormDaten()
+//zeige Daten im AusgabenDiv            
+function showDaten()
+     {
+        deleteAllChilds(ausgabeSprache1);
+        deleteAllChilds(ausgabeSprache2);
+        deleteAllChilds(ausgabeDateiName);
+        let textNode1=  document.createTextNode(konfig.sprache1); 
+        let textNode2=  document.createTextNode(konfig.sprache2) ;
+        let textNode3=  document.createTextNode(konfig.dateiName);
+        ausgabeSprache1.appendChild(textNode1);
+        ausgabeSprache2.appendChild(textNode2);
+        ausgabeDateiName.appendChild(textNode3);
+         let ausgabeDiv=document.getElementById("ausgabe")
+      if(!ausgabeDiv.classList.contains('showMe'))
+        {ausgabeDiv.setAttribute('class','showMe')};
+       
+     }//end showDaten
+            
+function showJson()
+    {
+            let divXmlAusgabe=document.getElementById("divXmlAusgabe") ;
+              divXmlAusgabe.setAttribute('class','showMe') ;
+           //divXmlAusgabe.classList.toggle("hideMe");
+           
+    }//end showJson()     
+            
+          
+            
+ //löschen aller KindElemente
+function deleteAllChilds(elternteil)
+       {
+           if (elternteil.hasChildNodes() )//find out if wordText has any child nodes
+           {
+               // löschen der Kinder
+               while (elternteil.firstChild) 
+               {
+                   elternteil.removeChild(elternteil.firstChild);
+               }
+           }//if
+       } //end deleteAllChilds             
+            
+// speichern der Auswahl  aus Liste der Sprachen
+function save()
+       { 
+           //abspeichern der gemerkten Wörter  
+        var jasonText = JSON.stringify(konfig);
+        createCookie(KeyLocalKonfig,jasonText);
+        //console.log("geschrieben!");
+        showDaten();
+    }//end saveNew()
+            
+// speichern der Eingaben (neues Buch)
+function saveNew()
+       { 
+           document.getElementById("newBook").setAttribute('class','showMe');
+         getFormDaten()
+         //abspeichern der gemerkten Wörter  
+        var jasonText = JSON.stringify(konfig);
+        createCookie(KeyLocalKonfig,jasonText);
+        //console.log("geschrieben!");
+         showDaten();
+    }//end saveNew()
+
+//laden der gemerkten Wörter
+function load()
+    {
+        var textkonfig = readCookie(KeyLocalKonfig);
+        
+        if ( textkonfig!=null)
+        {
+        //und nun String in Array:
+        konfig = JSON.parse(textkonfig);
+        console.log(konfig);
+        showDaten();
+        // nun in eine Liste
+       
+        }else
+        {
+            //fehlermeldung
+            showError("keine gemerkten KonfigDaten vorhanden");
+        }
+}//end load       
+		
+function loadDoc() {
+			  var xhttp = new XMLHttpRequest();
+			  xhttp.onload = function() {
+				  // XML-Daten sollten per "responseXML" angenommen werden.
+				  var xmlDoc = xhttp.responseXML;
+            /*			  
+				  var data = xmlDoc.getElementsByTagName("Data");
+				  var text = "";
+				  // Die Methoden "childNodes[x].nodeValue" liefern den Inhalt eines XML-Elements.
+				  for (var i = 0; i< data.length; i++) {
+					text += data[i].childNodes[0].nodeValue + "<br>";
+				  }
+				  document.getElementById("demo").innerHTML = text;
+            */
+                
+                  textArea.value="";
+                  fillArray(xmlDoc)
+			  };
+			/*
+			Um XML-Dokumente zu laden, füge als "responseType" "document" hinzu.
+			Außerdem setze den Header "Accept" auf "text/xml", um nur Daten im
+			XML-Format zu akzeptieren.
+			*/
+                  let dateiName="woerterbuch.xml";
+            let inputDatName= document.getElementById("xmlDateiName");
+             if(inputDatName.value.length!=0){dateiName=inputDatName.value}
+              
+			  xhttp.open("GET", dateiName, true);
+			  xhttp.responseType = "document";
+			  xhttp.setRequestHeader("Accept", "text/xml");
+			  xhttp.send();
+			}
+            
+ function fillArray(xmlDoc)
+      { 
+        var dataArr=[];
+        var titles = xmlDoc.getElementsByTagName("Data");
+         var rows = xmlDoc.getElementsByTagName("Row") 
+         console.log(rows.length);
+          var tds = rows[0].getElementsByTagName("Data") 
+         console.log(tds.length);
+          
+		// Die Methoden "childNodes[x].nodeValue" liefern den Inhalt eines XML-Elements.
+          let l=rows.length;
+		for (var i = 0; i< l; i++)
+            { var innerArr=[];
+           //  console.log(tds.length);
+             let lg=tds.length;
+                for (var j=0;j<lg;j++ )
+                { var itds = rows[i].getElementsByTagName("Data") 
+                 //  console.log(itds[j]);
+              //   console.log("j="+j);
+                 if (itds[j].childNodes[0].nodeValue != undefined){
+                 //    console.log(itds[j].childNodes[0].nodeValue);
+                    innerArr.push(itds[j].childNodes[0].nodeValue );
+                    }
+                }
+                 dataArr.push(innerArr );
+			}
+          
+         // console.log(dataArr);
+          
+        arrayToTab(dataArr);
+           //  console.log("arrayStringify");  
+         arrayStringify(dataArr);
+ }//illArray(xmlDoc)
+			
+            
+ function arrayToTab(tabArray)
+            {//console.log(tabArray);
+             //alert("das Array"+tabArray.length+"  inneresArray:"+tabArray[0].length);
+                //neue Tabelle erzeugen  
+                var trNode ;
+                var tdNode;
+                var tabNode=document.createElement("table")
+                let l=tabArray.length;
+               for (let i=0;i<l;i++ )
+                   { //console.log("i: "+i);
+                         trNode = document.createElement("tr");// Erzeugen des neuen tr-Elements
+                       let lg=tabArray[i].length;
+                    for (let j=0; j<lg; j++)
+                        {
+                       //     console.log("j: "+j);
+                            tdNode = document.createElement("td");// Erzeugen des neuen td-Elements		
+                      //      tdNode.setAttribute("onclick","setgray("+(j)+","+(i)+")");
+                        //    tdNode.setAttribute("ondblclick","changeCell("+(j)+","+(i)+")");
+                            var textNode = document.createTextNode( tabArray[i][j] ); 
+                             //ausgabe = ausgabe + "<td>" + i + ", " + j + "</td>";
+                            tdNode.appendChild(textNode);
+                            trNode.appendChild(tdNode); 
+                               
+                           }// for j (td)
+                    tabNode.appendChild(trNode); 
+                    }//for i (tr)
+                
+                   var tabDiv=document.getElementById("tabelle")
+                      tabDiv.innerHTML="";  //alte Tabelle löschen
+                      tabDiv.appendChild(tabNode); //neue Tabelle anhängen
+
+    }//end ArrayToTab           
+
+function arrayStringify(tabArray)
+    { 
+      var jasonText = JSON.stringify(tabArray);
+      textArea.value=jasonText;
+      textArea.select();
+      var jsonObject = JSON.parse(jasonText);
+        /*  console.log("_________________________________________");
+           console.log("Stringify jsonObject");
+           console.log(jsonObject);
+        console.log("_________________________________________");*/
+       }//arrayStringify(tabArray)
+function cutText()//https://www.youtube.com/watch?v=0jBP9erduqE
+            {
+                textArea.select();
+                document.execCommand("cut");
+            }       
+            
+function arrayToJson(tabArray)
+       { 
+           var objekt='[{"';
+           let l=tabArray.length;
+           for (let i=1;i<l;i++ )
+           {//da in der ersten Zeile die Beschriftung ist, sind die Daten erst ab Index 1!
+               let lg=tabArray[i].length;
+                 for (let j=0;j<lg;j++){
+                     objekt+=tabArray[0][j]+'":"'+tabArray[i][j]+'"';
+                     // "Beschriftung":"Wert"
+                   if (j<tabArray[i].length-1){ objekt+=',"'}
+                   
+               }
+           
+           objekt+=   '}'
+           if (i<tabArray.length-1){ objekt+=',{"'}
+               }
+      
+            
+            objekt+=']';
+            console.log("jasonObjekt aus manuelen Json:");
+            console.log(objekt);
+           var jsonObject = JSON.parse(objekt);
+           console.log(jsonObject);
+       }//end arrayToJson            
+            
+            
+            
+            
+
+//lösche gemerkte
+function deleteIt()
+       {       
+           deleteCookie(KeyLocalKonfig) ; 
+              deleteAllChilds(ausgabeSprache1);
+         deleteAllChilds(ausgabeSprache2);
+         deleteAllChilds(ausgabeDateiName);
+       }//end delete()		
+
+
+            
+            
+            
+//Fehler Div füllen und anzeigen      
+function showError(text)
+       {
+           clearTimeout(timer) ;
+           if (fehlerDiv.hasChildNodes() )//find out if wordText has any child nodes
+           {
+               // löschen der Kinder
+               fehlerDiv.removeChild(fehlerDiv.firstChild);
+               // löscht das erste Kind (TextKnoten) vom div
+             
+           }
+          
+           var textNode = document.createTextNode(text); 
+           fehlerDiv.appendChild(textNode);
+           fehlerDiv.setAttribute('class','showMe') 
+           timer= setTimeout(hideFehlerMeldung, timeoutTimer);
+          } //end showError  
+       
+
+function hideFehlerMeldung()
+       {
+           fehlerDiv.classList.toggle("hideMe");
+           fehlerDiv.classList.toggle("showMe");
+       }    
+            
+       
+            //*************************************************************       
+/*    Helferfunktion für das Setzen des Webstorage:	*/			
+function createCookie(name, value)
+       {
+           localStorage.setItem(name, value);
+       }
+
+/*		Helferfunktion für das Auslesen  des Webstorage:*/	
+function readCookie(name)
+       {
+           var wert = localStorage.getItem(name);
+           if (wert != null) {
+               return wert;
+           }
+           else {
+               return  null;
+           }
+       }
+
+ /*		Helferfunktion für das Löschen des  des Webstorage:			*/
+function deleteCookie(name)
+       {
+           localStorage.removeItem(name);
+       }	            
+
+            
+            
+// ###############Verstecken der Divs Ausgabe und newBook
+            
+ document.getElementById("ausgabe").setAttribute('class','hideMe');
+ document.getElementById("newBook").setAttribute('class','hideMe');          
+		</script> 
+    
+	</body>
+
+</html>

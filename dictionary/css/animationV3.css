@@ -1,0 +1,151 @@
+
+#menue{ margin-top:20px;
+       
+        position: relative;}
+    #menue2{float:right;}
+    #frageText{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top:15px;
+        }
+	#container { 
+             /*background-color: #75fcce;
+             border:1px solid blue;*/
+			 font-family: Verdana, Arial;
+			 width: 600px ;/*550px;*/
+             height: 450px;
+			 margin: 20px auto;
+			 position: relative;
+			 text-align: center;
+             overflow:hidden;
+             
+			}
+           
+	.animate {
+              font-size: 12px;
+			  width: 120px;
+			  height: 120px;
+			  background: lightblue;
+			  border-radius: 10%;
+			  line-height: 100px;
+			  position: absolute;
+			  opacity: 0;
+			}
+            /*  <!-- erste Zeile --> */
+	#animate1 {
+			  top: 0;
+			  left: 0
+			}
+	#animate2 {
+			  top: 0;
+			  left: 150px
+			}
+	#animate3 {
+			  top: 0;
+			  left: 300px
+			}
+	#animate4 {
+			  top: 0px;
+			  left: 450px
+			}
+            /*  <!-- zweite Zeile -->*/
+	#animate5 {
+			  top: 150px;
+			  left: 0
+			}
+	#animate6 {
+			  top: 150px;
+			  left: 150px
+			}
+	#animate7 {
+			  top: 150px;
+			  left: 300px
+			}
+	#animate8 {
+			  top: 150px;
+			  left: 450px
+			}
+            /* <!-- dritte Zeile -->*/
+    #animate9 {
+			  top: 300px;
+			  left: 0
+			}
+	#animate10 {
+			  top: 300px;
+			  left: 150px
+			}
+	#animate11 {
+			  top: 300px;
+			  left: 300px
+			}
+	#animate12 {
+			  top: 300px;
+			  left: 450px
+			}
+	#message {
+			  width: 50px;
+			  height: 22px;
+			  background: lightgrey;
+			  font-size: 12px;
+			  font-weight: bold;
+			  border-radius: 25%;
+			  box-sizing: border-box;
+			  padding-top: 2px;
+			  position: absolute;
+			  top: 0px;
+			  left: 285px;
+                  text-align: center;
+			}
+	#counter { 
+              width: 350px;
+			  height: 22px;
+			 /* background: lightgrey;*/
+			  font-size: 12px;
+			  
+			  box-sizing: border-box;
+			  padding-top: 2px;
+			  position: absolute;
+			  top: 0px;
+			  left: 345px;
+                text-align: center;
+                line-height: 20px;
+            display: none;
+			}
+        span{margin:0px 15px;}
+	input{width: 2.5rem;
+            text-align: right;
+        height: 1.2rem}
+    button{
+                background-color: #6996cb;
+				color: white;
+				padding: 14px 20px;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;}
+        .hideMe{display:none;}
+        .showMe{display:inline-block;}
+        #fehler 
+            {
+                position: absolute;
+                right: 150px;
+                width:50%;
+                height: 10rem;    
+                top:380px;
+                padding-top: 2rem;
+                text-align: center;
+                color:red;
+                font-size:2rem;
+                border:1px solid red;
+                box-shadow: 0 0 5px red;
+            }
+    .red{
+            color:red;
+            border:1px solid red;
+            box-shadow: 0 0 5px red;
+        }
+    .green{
+            color:limegreen;
+            border:1px solid limegreen;
+            box-shadow: 0 0 5px limegreen;
+           }
+	
